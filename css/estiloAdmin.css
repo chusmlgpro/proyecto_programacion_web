@@ -1,0 +1,93 @@
+    body{
+    margin-top: 0px;        
+}
+
+header{
+    background: maroon;
+    border-bottom:1px maroon solid;
+    color: white;
+    border-bottom-right-radius: 10px;
+    font-family: sans-serif;
+    
+}
+
+
+header h1{
+    text-transform: uppercase;
+    font-size: 40px;    
+    margin-top: 0px;    
+    margin-left: 10px;
+}
+
+header h1::first-letter{
+    text-transform: uppercase;
+    font-size: 50px;    
+    margin-top: 0px;    
+}
+
+nav h2{
+    color: maroon;  
+    text-transform: uppercase;      
+}
+nav h2::after, nav h2::before{
+    color: maroon;  
+    text-transform: uppercase;      
+    content: "*";
+}
+
+
+nav ul li{
+    font-weight: bolder;     
+    list-style: none;       
+}
+nav ul li::first-letter{
+    font-weight: bolder;        
+    text-transform: uppercase;   
+}
+nav ul li ul li{
+    color: maroon;    
+}
+
+section h1::first-letter{
+    color: maroon;
+    text-transform: uppercase;
+    text-indent: capitalize;    
+}
+
+section h1{        
+    background:white;
+    border-bottom: 2px solid maroon;            
+    color: maroon;
+    text-indent: capitalize;    
+}
+
+section ul li{
+    list-style: lower-greek;
+    color: maroon;
+}
+section ul li:nth-child(3n+1){    
+    color: rgba(65, 105, 225, 0.404);
+}
+
+
+
+section p::first-letter{
+    margin-left: 15px;        
+}
+
+
+footer h4{
+    width:100%;
+    height: 5%;
+    text-align: center;    
+    background: maroon;
+    color: white;
+    font-weight: bold;    
+    padding: 1%;
+    border-top-right-radius: 10px;
+    margin-bottom: 0px;
+}
+
+footer h4::after{
+    content: " .";
+}

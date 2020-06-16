@@ -1,0 +1,343 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+    box-sizing: border-box;
+}
+
+.content-fluit{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+.row{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    clear: both;
+    display: table;
+    border: 0px solid maroon;
+}
+[class*="col-"]{/*Todas las clases que empiecen con col-*/
+    float: left;
+    padding: 0%;
+}
+header #logotipo{
+    text-align: center;
+    padding: 20px;    
+}
+/*---------------------------------------------------------------botones*/
+header nav ul li a {
+    display: block;/*Todo el renglon (block)*/
+    background: black;
+    color:white;
+    text-align: center;
+    padding: 10px;        
+}
+
+#Inicio{
+    display: block;/*Todo el renglon (block)*/
+    background: maroon;
+    color:white;
+    text-align: center;
+    padding: 10px;  
+}
+
+.claseAzul{
+    display: block;/*Todo el renglon (block)*/
+    background: maroon;
+    color:white;
+    text-align: center;
+    padding: 10px;  
+}
+
+header nav ul li a:hover{
+    background: white;
+    color:black;
+    text-decoration: none;
+    border:1px solid black;
+}
+
+header nav ul li a:active{
+    background: yellow;
+    color:black;
+}
+/*----------------------------------------------------------------*/
+#slide{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+#slide ul{
+    position: relative;
+    left: 0%;
+    margin: auto;
+    height: auto;
+    width: 500%;    /*<!--Una mas-->*/
+    clear: both;
+    display: table;
+}
+#slide ul li{
+    position: relative;
+    float: left;
+    width: 20%; /* <!--Una  !5! menos-->*/
+}
+
+#slide ul li img{
+    width: 100%;    
+}
+/*______________________________________________________________PAGINACION*/
+#slide #paginacion{
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    bottom: 10px;
+    left: 0;
+    z-index: 1;
+}
+
+#slide #paginacion li{
+    display: inline-block;
+    margin: 0px 5px;
+    cursor: pointer;
+    opacity: .5;
+    color: white;
+    text-shadow: 0px 0px 5px #333;
+}
+#slide #paginacion li:first-child{
+    opacity: 1;
+}
+
+#slide .flechas{
+    position: absolute;
+    font-size: 2em;
+    color:white;
+    cursor:pointer;
+    z-index: 2;
+}
+
+#slide #retroceder{
+    top:45%;
+    left:2%;    
+}
+#slide #avanzar{
+    top:45%;
+    right: 2%;    
+}
+/*______________________________________________________________TEXTO DEL SLIDE*/
+
+#slide ul li .textoslide{
+    position: absolute;
+    width: 100%;
+    bottom:40px;
+    left: 0;
+    text-align: center;
+    z-index: 1;
+    color:white;
+}
+#slide ul li .textoslide h1{
+    background: rgba(0,0,0,.5);
+    padding: 5px 0;
+}
+
+#slide ul li .textoslide h3{
+    background: rgba(0,0,0,.1);
+    padding-bottom: 10px;
+}
+
+
+/*______________________________________________________________PANTALLA DE ESCRITORIO GRANDE (LG)*/
+@media (min-width: 1200px){
+    .col-lg-12{width: 100%;}
+    .col-lg-11{width: 91.66666667%;}
+    .col-lg-10{width: 83.33333333%;}
+    .col-lg-9{width: 75%;}
+    .col-lg-8{width: 66.666666667%;}
+    .col-lg-7{width: 58.333333333%;}
+    .col-lg-6{width: 50%;}
+    .col-lg-5{width: 41.666666666%;}
+    .col-lg-4{width: 33.333333333%;}
+    .col-lg-3{width: 25%;}
+    .col-lg-2{width: 16.666666666%;}
+    .col-lg-1{width: 8.333333333%;}
+    .col-lg-0{display: none;}
+
+header nav ul li a{
+    margin: 1% 1px;
+    font-size: 18px;
+    text-align: center;
+}
+header #logotipo img{
+    width: 100%;
+}
+}
+/*______________________________________________________________PANTALLA DE ESCRITORIO Mediano (md)*/
+@media (max-width: 1199px) and (min-width: 992px){
+    .col-md-12{width: 100%;}
+    .col-md-11{width: 91.66666667%;}
+    .col-md-10{width: 83.33333333%;}
+    .col-md-9{width: 75%;}
+    .col-md-8{width: 66.666666667%;}
+    .col-md-7{width: 58.333333333%;}
+    .col-md-6{width: 50%;}
+    .col-md-5{width: 41.666666666%;}
+    .col-md-4{width: 33.333333333%;}
+    .col-md-3{width: 25%;}
+    .col-md-2{width: 16.666666666%;}
+    .col-md-1{width: 8.333333333%;}
+    .col-md-0{display: none;}
+
+header nav ul li a{
+    margin: 30% 5px;
+    font-size: 14px;
+}
+header #logotipo img{
+    width: 100%;
+}}
+/*______________________________________________________________PANTALLA DE tablet  (sm)*/
+@media (max-width: 991px) and (min-width: 768px){
+    .col-sm-12{width: 100%;}
+    .col-sm-11{width: 91.66666667%;}
+    .col-sm-10{width: 83.33333333%;}
+    .col-sm-9{width: 75%;}
+    .col-sm-8{width: 66.666666667%;}
+    .col-sm-7{width: 58.333333333%;}
+    .col-sm-6{width: 50%;}
+    .col-sm-5{width: 41.666666666%;}
+    .col-sm-4{width: 33.333333333%;}
+    .col-sm-3{width: 25%;}
+    .col-sm-2{width: 16.666666666%;}
+    .col-sm-1{width: 8.333333333%;}
+    .col-sm-0{display: none;}
+
+header nav ul li a{
+    margin: 28% 2px;
+    font-size: 10px;
+}
+header #logotipo img{
+    width: 100%;
+}
+#slide ul li .textoslide h1{
+    font-size: 20px;
+}
+#slide ul li .textoslide h3{
+    font-size: 14px;
+}}
+
+
+/*______________________________________________________________PANTALLA DE telefonos  (xs)*/
+@media (max-width: 767px){
+    .col-xs-12{width: 100%;}
+    .col-xs-11{width: 91.66666667%;}
+    .col-xs-10{width: 83.33333333%;}
+    .col-xs-9{width: 75%;}
+    .col-xs-8{width: 66.666666667%;}
+    .col-xs-7{width: 58.333333333%;}
+    .col-xs-6{width: 50%;}
+    .col-xs-5{width: 41.666666666%;}
+    .col-xs-4{width: 33.333333333%;}
+    .col-xs-3{width: 25%;}
+    .col-xs-2{width: 16.666666666%;}
+    .col-xs-1{width: 8.333333333%;}
+    .col-xs-0{display: none;}
+
+    header nav ul li a{
+        margin: 0% ;
+        font-size: 14px;
+    }
+    header #logotipo img{
+        width: 50%;
+    }
+    #slide ul li .textoslide{
+        display: none;
+    }
+}
+    #slide #retroceder{
+        top:40%;
+        font-size: 1em;
+        right: 2%;
+    }
+    #slide #avanzar{
+        top:40%;
+        font-size: 1em;
+        right: 2%;
+    }
+
+    #titulo{
+        position: relative;        
+        /*background:black;*/
+        color: black;        
+        text-align: left;         
+        /*border: 5px solid yellow;*/                
+        font-weight:bold;
+        font-size:150%;        
+    }
+    #slogan{
+        position: relative;           
+        /*background:black;*/
+        color: black;
+        font-weight: bold;       
+        text-align: right; 
+        /*border: 5px solid yellow;*/        
+        color:white;
+    }
+
+    /*------------------------------------------------------------------*/
+    #cabecera {    
+        animation: changeColor 10s linear 5s 4 alternate forwards running;
+      }
+      
+      @keyframes changeColor {          
+        0%{background: #FFFF00;}        
+        20%{background: #00FF00;}        
+        40%{background: #00FFFF;}                
+        80%{background: #FF00FF;}                    
+      }
+      /*------------------------------------------------------------------*/
+
+
+      #cabeceraTabla{
+        font-size: 25px;
+        text-align: center;
+        background: black;
+        color:white;
+        }    
+
+        #datosTabla{
+            font-size: 20px;
+            text-align: center;
+            background: white;
+            color:black;
+        }
+        #datosTablaInsertar{
+            font-size: 20px;
+            text-align: center;
+            background: white;
+            color:black;
+        }
+        #aceptar{
+            font-size: 25px;
+            text-align: center;
+            background: white;
+            color:maroon;
+            width: 100%;         
+            height: 50%;   
+            
+        }
+        
+        #aceptar:hover{
+            font-size: 25px;
+            text-align: center;
+            background: maroon;
+            color:white;
+            width: 100%;
+            height: 50%;            
+        }
